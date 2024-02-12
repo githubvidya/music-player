@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <style>
+        @media only screen and (max-width: 600px) {
+            .main{
+                display: flex;
+                flex-direction: column;
+                background: wheat;
+                height: 92vh;
+            }
+            .left{
+                margin-bottom: 10%;
+                width: 90%;
+            }
+            .right{
+                width: 95%;
+            }
+            .playr{
+                font-size: 10px;
+            }
+            .size{
+                font: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="imgg">
+                
+            </div>
+            <div class="playr">
+                <h3 id="backward"><i class="ri-skip-back-fill"></i></h3>
+              <h3 id="play"><i class="ri-play-fill"></i></h3>
+                <h3 id="forward"><i class="ri-skip-forward-fill"></i></h3>
+            </div>
+        </div>
+        <div class="right">
+            <h1 class="right-h1">ALL SONGS</h1>
+            <div class="list">
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
